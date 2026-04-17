@@ -1,0 +1,850 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterCuan Saham — Hasilkan Cuan dari Trading Saham</title>
+    <meta name="description"
+        content="Platform pelatihan saham harian, mentoring 24/7, dan trading bareng live via Zoom. Dampingi Anda dari nol sampai mahir dengan sinyal real-time." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="logo">
+                <div class="logo-icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect width="28" height="28" rx="8" fill="url(#logoGrad)" />
+                        <path d="M8 18L12 12L16 15L20 8" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M17 8H20V11" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0" y1="0" x2="28" y2="28">
+                                <stop stop-color="#c2143c" />
+                                <stop offset="1" stop-color="#810620" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">Master <span class="logo-accent">Cuan</span> Saham</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#benefit">Benefit</a></li>
+                <li><a href="#kurikulum">Kurikulum</a></li>
+                <li><a href="#signal">Signal</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#tentang">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <a href="#paket" class="btn btn-primary nav-cta" id="navCta">
+                <span>Paket Elite Club</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-elements">
+            <div class="hero-grid-pattern"></div>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content" id="heroContent">
+                <div class="hero-badge animate-fade-up">
+                    <span class="badge-dot"></span>
+                    <span>Happy Cuan Every Day</span>
+                </div>
+                <h1 class="hero-title animate-fade-up delay-1">
+                    <span class="text-red">Hasilkan Cuan</span> <span class="text-nowrap">1 Juta/Hari</span> Dari
+                    Trading Saham
+                </h1>
+                <p class="hero-subtitle animate-fade-up delay-2">
+                    Platform pelatihan saham harian, mentoring 24/7, dan trading bareng live via Zoom. Kami dampingi
+                    Anda dari nol sampai mahir dengan sinyal real-time.
+                </p>
+                <div class="hero-actions animate-fade-up delay-3">
+                    <a href="https://wa.me/6281945178899" class="btn btn-primary btn-lg" id="heroCta">
+                        <span>Daftar Sekarang</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade-up delay-2">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-glow"></div>
+                    <img src="assets/hero-person.png" alt="MasterCuan Saham Professional Trader" class="hero-image"
+                        id="heroImage" />
+                    <div class="floating-card floating-card-1" id="floatingCard1">
+                        <div class="fc-icon fc-icon-green">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M5 13L9 7L13 10" stroke="#22C55E" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="fc-content">
+                            <span class="fc-label">Profit Hari Ini</span>
+                            <span class="fc-value fc-value-green">+Rp 1.250.000</span>
+                        </div>
+                    </div>
+                    <div class="floating-card floating-card-2" id="floatingCard2">
+                        <div class="fc-icon fc-icon-blue">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 3v12M5 11l4 4 4-4" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="fc-content">
+                            <span class="fc-label">Akurasi Signal</span>
+                            <span class="fc-value fc-value-blue">92.5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BENEFITS ========== -->
+    <section class="benefits" id="benefit">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Elite Club Meta-Morphosis</span>
+                <h2 class="section-title">
+                    <span class="text-red">Senjata Lengkap</span><br>
+                    Untuk <span style="color: #000;">Cuan</span> Dari Pasar Modal
+                </h2>
+                <p class="section-subtitle">Bergabung dengan Elite Club memberikan anda akses ke pelatihan dan ekosistem
+                    trading
+                    terlengkap di Indonesia, diantaranya :</p>
+            </div>
+            <div class="benefits-grid" id="benefitsGrid">
+                <div class="benefit-card" id="benefit1">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M14 3.5L3.5 9.33L14 15.17L24.5 9.33L14 3.5Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.5 18.67L14 24.5L24.5 18.67" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.5 14L14 19.83L24.5 14" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">30 Menit Mahir Trading Saham</h3>
+                    <p class="benefit-desc">Kurikulum padat dan efisien yang dirancang khusus untuk pemula. Mulai
+                        trading dengan percaya diri hanya dalam 30 menit.</p>
+                </div>
+                <div class="benefit-card" id="benefit2">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M23.33 14A9.33 9.33 0 1 1 14 4.67" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M24.5 3.5L14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M18.67 3.5H24.5V9.33" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">24/7 Mentoring Aktif</h3>
+                    <p class="benefit-desc">Tim mentor profesional siap membimbing Anda kapan saja. Tanya jawab,
+                        konsultasi portofolio, dan review strategi tanpa batas.</p>
+                </div>
+                <div class="benefit-card" id="benefit3">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M4.67 21L9.33 14L14 17.5L18.67 9.33L23.33 14" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="14" cy="7" r="2.5" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Real-Time Signal Harian</h3>
+                    <p class="benefit-desc">Dapatkan sinyal entry dan exit secara real-time setiap hari. Akurasi tinggi
+                        yang didukung analisis teknikal dan fundamental mendalam.</p>
+                </div>
+                <div class="benefit-card" id="benefit4">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" transform="translate(2,1)" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Garansi Sampai Mahir</h3>
+                    <p class="benefit-desc">Kami berkomitmen mendampingi Anda sampai benar-benar bisa trading mandiri.
+                        Materi terstruktur, ramah pemula.</p>
+                </div>
+            </div>
+
+            <div class="benefits-grid" id="benefitsGrid2">
+                <div class="benefit-card" id="benefit5">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Rekomendasi Saham</h3>
+                    <p class="benefit-desc">Membantu Anda untuk bisa langsung praktek beli dan jual saham tanpa susah
+                        screening dan analisa sendiri</p>
+                </div>
+                <div class="benefit-card" id="benefit6">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Trading Bareng</h3>
+                    <p class="benefit-desc">Membantumu trading bareng setiap hari secara langsung (LIVE) via zoom saat
+                        jam bursa berjalan agar makin cuan
+                    </p>
+                </div>
+                <div class="benefit-card" id="benefit7">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <line x1="9" y1="2" x2="9" y2="22" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <rect x="6" y="8" width="6" height="8" rx="1" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <line x1="17" y1="2" x2="17" y2="22" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <rect x="14" y="5" width="6" height="6" rx="1" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Metode Jepang</h3>
+                    <p class="benefit-desc">Membantumu Anda agar lebih cepat mahir trading saham, cukup bedakan candle
+                        warna biru dan candle warna merah</p>
+                </div>
+                <div class="benefit-card" id="benefit8">
+                    <div class="benefit-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Komunitas Saham</h3>
+                    <p class="benefit-desc">Membantumu saling diskusi berbagai hal tentang saham 24 jam non stop mulai
+                        dari pemula sampai profesional</p>
+                </div>
+            </div>
+
+
+            <!-- Detailed Benefit Cards -->
+            <div class="benefit-details" id="benefitDetails">
+                <div class="detail-card" id="detailCard1">
+                    <div class="detail-content">
+                        <span class="detail-badge">Elite Club Meta-Morphosis</span>
+                        <h3 class="detail-title"><span class="text-red">Live Trading</span> & Edukasi via Zoom</h3>
+                        <p class="detail-desc">Trading bersama mentor profesional setiap hari melalui Zoom. Pelajari
+                            strategi entry, exit, dan manajemen risiko secara langsung sambil melihat aksi real-time di
+                            market.</p>
+                        <ul class="detail-features">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <circle cx="9" cy="9" r="7" fill="#DCFCE7" />
+                                    <path d="M6 9l2 2 4-4" stroke="#22C55E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span>Sesi pagi & siang setiap hari bursa</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <circle cx="9" cy="9" r="7" fill="#DCFCE7" />
+                                    <path d="M6 9l2 2 4-4" stroke="#22C55E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span>Analisis market real-time bersama mentor</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                    <circle cx="9" cy="9" r="7" fill="#DCFCE7" />
+                                    <path d="M6 9l2 2 4-4" stroke="#22C55E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span>Recording sesi tersedia untuk replay</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail-visual">
+                        <div class="detail-mockup">
+                            <div class="mockup-header">
+                                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                <span class="mockup-title">Live Session</span>
+                            </div>
+                            <div class="mockup-body">
+                                <div class="mockup-chart">
+                                    <svg viewBox="0 0 300 120" fill="none">
+                                        <path d="M0 100 Q30 90 60 80 T120 60 T180 40 T240 50 T300 20" stroke="#c2143c"
+                                            stroke-width="2.5" fill="none" />
+                                        <path d="M0 100 Q30 90 60 80 T120 60 T180 40 T240 50 T300 20 V120 H0 Z"
+                                            fill="url(#chartFill)" opacity="0.15" />
+                                        <circle cx="240" cy="50" r="4" fill="#c2143c" />
+                                        <defs>
+                                            <linearGradient id="chartFill" x1="150" y1="0" x2="150" y2="120"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#c2143c" />
+                                                <stop offset="1" stop-color="#c2143c" stop-opacity="0" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="mockup-stats">
+                                    <div class="ms-item"><span class="ms-label">IHSG</span><span
+                                            class="ms-val ms-green">+1.2%</span></div>
+                                    <div class="ms-item"><span class="ms-label">BBCA</span><span
+                                            class="ms-val ms-green">+2.8%</span></div>
+                                    <div class="ms-item"><span class="ms-label">TLKM</span><span
+                                            class="ms-val ms-red">-0.5%</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== KURIKULUM ========== -->
+    <section class="kurikulum" id="kurikulum">
+        <div class="container">
+            <div class="kurikulum-wrapper">
+                <div class="kurikulum-content">
+                    <span class="section-badge">Elite Club Meta-Morphosis</span>
+                    <h2 class="section-title">
+                        <span class="text-red">Materi Terstruktur,</span><br>
+                        <span style="color: #000;">Kurikulum Eksklusif</span>
+                    </h2>
+                    <p class="section-subtitle section-subtitle-left">Kami siapkan kurikulum eksklusif yang akan
+                        membantu anda belajar dari nol hingga
+                        mahir, yang dirancang khusus oleh praktisi berpengalaman untuk membangun fondasi trading solid.
+                        Kini, strategi Anda semakin tajam dengan integrasi tools AI yang mampu menganalisa
+                        sentimen pasar dan pergerakan saham secara real-time. Kuasai teknik profesional sekaligus
+                        manfaatkan kecerdasan buatan untuk pengambilan keputusan yang lebih presisi dan menguntungkan..
+                    </p>
+                    <ul class="detail-features" style="margin-top: 1.5rem; justify-content: flex-start;">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <circle cx="9" cy="9" r="7" fill="#f5ced5" />
+                                <path d="M6 9l2 2 4-4" stroke="#c2143c" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Ramah Pemula</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <circle cx="9" cy="9" r="7" fill="#f5ced5" />
+                                <path d="M6 9l2 2 4-4" stroke="#c2143c" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Metode Jepang</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <circle cx="9" cy="9" r="7" fill="#f5ced5" />
+                                <path d="M6 9l2 2 4-4" stroke="#c2143c" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>30 Menit Mahir Trading Saham</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="kurikulum-modules" id="kurikulumModules">
+                    <div class="module-card" id="module1">
+                        <div class="module-number">01</div>
+                        <div class="module-info">
+                            <h3 class="module-title">Membaca Indikator Trading</h3>
+                            <p class="module-desc">Kuasai berbagai indikator teknikal seperti MA, RSI, MACD, dan
+                                Bollinger Bands untuk pengambilan keputusan tepat.</p>
+                        </div>
+                        <div class="module-arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 10h10M11 6l4 4-4 4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="module-card" id="module2">
+                        <div class="module-number">02</div>
+                        <div class="module-info">
+                            <h3 class="module-title">Rahasia Pergerakan Harga Saham</h3>
+                            <p class="module-desc">Pelajari price action, pola candlestick, dan cara membaca sentiment
+                                market untuk prediksi yang akurat.</p>
+                        </div>
+                        <div class="module-arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 10h10M11 6l4 4-4 4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="module-card" id="module3">
+                        <div class="module-number">03</div>
+                        <div class="module-info">
+                            <h3 class="module-title">Analisa Teknikal & Fundamental</h3>
+                            <p class="module-desc">Screening saham potensial menggunakan kombinasi analisa teknikal dan
+                                fundamental untuk menemukan peluang terbaik.</p>
+                        </div>
+                        <div class="module-arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 10h10M11 6l4 4-4 4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="module-card" id="module4">
+                        <div class="module-number">04</div>
+                        <div class="module-info">
+                            <h3 class="module-title">Screening ARA, Swing, ODT & Fast Trade</h3>
+                            <p class="module-desc">Rahasia menemukan saham ARA, setup swing trade, one day trade, dan
+                                fast trade yang profitable.</p>
+                        </div>
+                        <div class="module-arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 10h10M11 6l4 4-4 4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="module-card" id="module5">
+                        <div class="module-number">05</div>
+                        <div class="module-info">
+                            <h3 class="module-title">Rahasia Anti Cutloss</h3>
+                            <p class="module-desc">Strategi manajemen risiko canggih untuk meminimalkan kerugian dan
+                                melindungi modal Anda di kondisi market apapun.</p>
+                        </div>
+                        <div class="module-arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M5 10h10M11 6l4 4-4 4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SIGNAL PREMIUM ========== -->
+    <section class="signal" id="signal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Elite Club Meta-Morphosis</span>
+                <h2 class="section-title"><span class="text-red">Signal Premium</span> <span style="color: #000;">Bebas
+                        Pusing</span></h2>
+                <p class="section-subtitle">Tidak punya waktu untuk screening saham berjam-jam?
+                    Serahkan pada ahlinya. Kami menyediakan berbagai tipe sinyal yang sesuai dengan gaya trading dan
+                    profil risiko anda.</p>
+            </div>
+            <div class="signal-grid" id="signalGrid">
+                <div class="signal-card" id="signalBSJP">
+                    <div class="signal-card-header">
+                        <div class="signal-icon signal-icon-red">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M17 3L21 7L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3 13V11A4 4 0 0 1 7 7H21" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M7 21L3 17L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21 11V13A4 4 0 0 1 17 17H3" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <span class="signal-type">BSJP</span>
+                    </div>
+                    <h3 class="signal-title">Beli Sore Jual Pagi</h3>
+                    <p class="signal-desc">Tangkap momentum pembukaan market. Beli di sesi sore, jual di sesi pagi hari
+                        berikutnya untuk profit konsisten.</p>
+                    <div class="signal-tag">Overnight</div>
+                </div>
+                <div class="signal-card" id="signalSwing">
+                    <div class="signal-card-header">
+                        <div class="signal-icon signal-icon-red">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 17L9 11L13 15L21 7" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15 7H21V13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="signal-type">Swing</span>
+                    </div>
+                    <h3 class="signal-title">Swing Trade</h3>
+                    <p class="signal-desc">Hold beberapa hari hingga minggu untuk profit lebih besar. Ideal untuk yang
+                        tidak bisa pantau market setiap saat.</p>
+                    <div class="signal-tag">Multi-Day</div>
+                </div>
+                <div class="signal-card" id="signalFast">
+                    <div class="signal-card-header">
+                        <div class="signal-icon signal-icon-red">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="signal-type">Fast</span>
+                    </div>
+                    <h3 class="signal-title">Fast Trade</h3>
+                    <p class="signal-desc">Scalping cepat untuk volatilitas tinggi. Masuk dan keluar dalam hitungan
+                        menit untuk profit intraday.</p>
+                    <div class="signal-tag">Intraday</div>
+                </div>
+                <div class="signal-card" id="signalRequest">
+                    <div class="signal-card-header">
+                        <div class="signal-icon signal-icon-red">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="signal-type">Custom</span>
+                    </div>
+                    <h3 class="signal-title">Signal by Request</h3>
+                    <p class="signal-desc">Analisis khusus untuk saham pilihan Anda. Minta analisis mendalam kapan saja
+                        dari tim analis kami.</p>
+                    <div class="signal-tag">On-demand</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimoni" id="testimoni">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Kisah Sukses</span>
+                <h2 class="section-title"><span style="color: #c2143c;">Bukti Nyata,</span> <span
+                        style="color: #000;">Bukan Sekadar Janji</span></h2>
+                <p class="section-subtitle">Simak langsung berbagai testimoni inspiratif dari para anggota Elite Club
+                    yang telah berhasil meraih transformasi luar biasa, membuktikan bahwa dedikasi serta strategi yang
+                    tepat benar-benar mampu membawa perubahan nyata dalam hidup Anda.</p>
+            </div>
+            <div class="testimonial-grid" id="testimonialGrid">
+                <div class="testimonial-card testimonial-card-featured" id="testimonial1">
+                    <div class="testimonial-header">
+                        <div class="testimonial-rating">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="testimonial-quote">"Signal ODT dari MasterCuan akurasinya luar biasa. Dalam 3
+                        bulan pertama, profit saya sudah mencapai +Rp 12.5 Juta. Sangat worth it untuk investasi ilmu!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar author-avatar-1">BS</div>
+                        <div class="author-info">
+                            <span class="author-name">Budi Santoso</span>
+                            <span class="author-role">Karyawan Swasta</span>
+                        </div>
+                        <div class="author-profit">
+                            <span class="profit-label">Profit</span>
+                            <span class="profit-value">+Rp 12.5M</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card testimonial-card-featured" id="testimonial2">
+                    <div class="testimonial-header">
+                        <div class="testimonial-rating">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="testimonial-quote">"Awalnya skeptis, tapi signal BSJP benar-benar konsisten.
+                        Sekarang saya bisa konsisten 3% per hari. Ibu rumah tangga juga bisa cuan dari saham!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar author-avatar-2">RW</div>
+                        <div class="author-info">
+                            <span class="author-name">Rina Wijaya</span>
+                            <span class="author-role">Ibu Rumah Tangga</span>
+                        </div>
+                        <div class="author-profit">
+                            <span class="profit-label">Daily Avg</span>
+                            <span class="profit-value">+3%/hari</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card testimonial-card-featured" id="testimonial3">
+                    <div class="testimonial-header">
+                        <div class="testimonial-rating">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="#FBBF24">
+                                <path d="M8 1l2.2 4.4L15 6.2l-3.5 3.4.8 4.8L8 12.2 3.7 14.4l.8-4.8L1 6.2l4.8-.8L8 1z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="testimonial-quote">"Metode Segitiga dari MasterCuan benar-benar game changer.
+                        Setup yang clean dan terstruktur membuat trading jadi jauh lebih tenang dan profitable."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar author-avatar-3">AP</div>
+                        <div class="author-info">
+                            <span class="author-name">Andi Pratama</span>
+                            <span class="author-role">Full-time Trader</span>
+                        </div>
+                        <div class="author-profit">
+                            <span class="profit-label">Experience</span>
+                            <span class="profit-value">3+ Tahun</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PAKET ========== -->
+    <section class="paket" id="paket">
+        <div class="container">
+            <div class="paket-wrapper">
+                <div class="paket-visual">
+                    <img src="assets/produk.png" alt="Produk Elite Club Meta-Morphosis Master Cuan Saham"
+                        class="paket-image" />
+                    <div class="paket-glow"></div>
+                </div>
+                <div class="paket-content">
+                    <span class="section-badge">Penawaran Spesial</span>
+                    <h2 class="paket-title"><span style="color: #c2143c;">Elite Club Meta-Morphosis</span><br>Master
+                        Cuan Saham</h2>
+                    <p class="paket-desc">Dapatkan Profit Dari Trading Mulai 10%-35% Setiap Hari, Tanpa Ribet Analisa
+                        Dan Screening Saham. Durasi Pendampingan 365 Hari.</p>
+                    <div class="paket-price-container">
+                        <span class="paket-price-label">Investasi Sekali, Cuan Berkali-kali</span>
+                        <div class="paket-price">Rp 3.500.000</div>
+                    </div>
+                    <ul class="paket-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="8" fill="#F0FDF4" />
+                                <path d="M7 10l2 2 4-4" stroke="#22C55E" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Potensi Cuan Mulai 10%-35% Setiap Hari</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="8" fill="#F0FDF4" />
+                                <path d="M7 10l2 2 4-4" stroke="#22C55E" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Tanpa Ribet Analisa &amp; Screening Saham</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="8" fill="#F0FDF4" />
+                                <path d="M7 10l2 2 4-4" stroke="#22C55E" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Durasi Pendampingan 365 Hari</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/6281945178899" class="btn btn-primary btn-lg paket-btn">
+                        <span>Daftar Sekarang</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FINAL CTA ========== -->
+    <section class="final-cta" id="finalCta">
+        <div class="container">
+            <div class="cta-wrapper">
+                <div class="cta-bg-elements">
+                    <div class="cta-glow cta-glow-1"></div>
+                    <div class="cta-glow cta-glow-2"></div>
+                </div>
+                <div class="cta-content">
+                    <h2 class="cta-title">Konsultasi Gratis</h2>
+                    <p class="cta-subtitle">Jangan biarkan tabungan Anda jalan ditempat! Mulai langkah investasi cerdas
+                        Anda sekarang bersama ribuan trader di Master Cuan Saham.
+                        Manfaatkan konsultasi gratis hari ini!</p>
+                    <div class="cta-actions" style="justify-content: center;">
+                        <a href="https://wa.me/6281945178899" class="btn btn-wa btn-lg" id="finalCtaBtn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M17.05 2.95A9.73 9.73 0 0 0 10.06.02C4.58.02.13 4.47.13 9.95a9.9 9.9 0 0 0 1.32 4.96L.04 20l5.2-1.36A9.87 9.87 0 0 0 10.06 20c5.48 0 9.93-4.45 9.93-9.93a9.87 9.87 0 0 0-2.94-7.12zM10.06 18.2a8.18 8.18 0 0 1-4.18-1.14l-.3-.18-3.1.81.83-3.03-.2-.31A8.17 8.17 0 0 1 1.96 9.95c0-4.54 3.69-8.23 8.23-8.23a8.18 8.18 0 0 1 5.82 2.41 8.18 8.18 0 0 1 2.41 5.82c-.13 4.54-3.82 8.25-8.36 8.25zm4.51-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.12-.12.25-.29.37-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.25 3.75.59.25 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29z"
+                                    fill="currentColor" />
+                            </svg>
+                            <span>Chat via WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="tentang">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                <rect width="28" height="28" rx="8" fill="#c2143c" />
+                                <path d="M8 18L12 12L16 15L20 8" stroke="white" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17 8H20V11" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="logo-text logo-text-light">Master <span class="logo-accent"
+                                style="color: white;">Cuan</span>
+                            Saham</span>
+                    </a>
+                    <p class="footer-desc">Platform pelatihan saham harian, mentoring 24/7, dan trading bareng live via
+                        Zoom. Kami dampingi Anda dari nol sampai mahir dengan sinyal real-time. Membantu trader pemula
+                        hingga mahir meraih profit konsisten dari pasar saham
+                        Indonesia melalui edukasi, mentoring, dan sinyal trading berkualitas tinggi.</p>
+                </div>
+                <div class="footer-links-group" style="margin: 0 auto;">
+                    <h4 class="footer-title">Sosial Media</h4>
+                    <ul class="footer-links footer-contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <a href="https://www.instagram.com/mastercuansaham/" target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.18-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.12-3.39-3.11-3.46-5.4-.1-2.92.83-5.27 3.32-6.52 1.04-.51 2.19-.78 3.35-.85V14c-1.3.11-2.45.83-3.14 1.9-.53.86-.68 1.93-.31 2.87.35.91 1.13 1.59 2.06 1.86 1.12.3 2.37.1 3.28-.59.88-.66 1.34-1.72 1.4-2.82.04-3.18.02-6.36.02-9.54V.02z" />
+                            </svg>
+                            <a href="https://www.tiktok.com/@master.cuan0" target="_blank">TikTok</a>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                            <a href="https://www.youtube.com/@mastercuansaham/shorts" target="_blank">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-title">Hubungi Kami</h4>
+                    <ul class="footer-links footer-contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path
+                                    d="M13.33 11.28v2a1.33 1.33 0 0 1-1.45 1.33A13.22 13.22 0 0 1 6.1 12.4a13 13 0 0 1-4-4A13.22 13.22 0 0 1 .92 2.59 1.33 1.33 0 0 1 2.24 1.13h2a1.33 1.33 0 0 1 1.33 1.15c.08.63.24 1.25.46 1.84a1.33 1.33 0 0 1-.3 1.41l-.85.85a10.67 10.67 0 0 0 4 4l.85-.85a1.33 1.33 0 0 1 1.41-.3c.59.22 1.21.38 1.84.46a1.33 1.33 0 0 1 1.15 1.36v.23z"
+                                    stroke="currentColor" stroke-width="1.2" />
+                            </svg>
+                            <span>0819-451-7889</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>info@mastercuansaham.com</span>
+                        </li>
+                        <li style="align-items: flex-start;">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                style="margin-top: 4px; flex-shrink: 0;">
+                                <path
+                                    d="M13.33 6.67C13.33 10.67 8 14.67 8 14.67S2.67 10.67 2.67 6.67a5.33 5.33 0 1 1 10.66 0z"
+                                    stroke="currentColor" stroke-width="1.2" />
+                                <circle cx="8" cy="6.67" r="2" stroke="currentColor" stroke-width="1.2" />
+                            </svg>
+                            <span>Perumahan Persada Amany Blok A Kav 2<br>Jl. Kelapa Gading, Bumiayu,
+                                Kedungkandang<br>Malang, Jawa Timur 65135</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Master Cuan Saham. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING WHATSAPP ========== -->
+    <a href="https://wa.me/6281945178899" class="floating-wa" id="floatingWA" aria-label="Chat WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M17.05 2.95A9.73 9.73 0 0 0 10.06.02C4.58.02.13 4.47.13 9.95a9.9 9.9 0 0 0 1.32 4.96L.04 20l5.2-1.36A9.87 9.87 0 0 0 10.06 20c5.48 0 9.93-4.45 9.93-9.93a9.87 9.87 0 0 0-2.94-7.12zM10.06 18.2a8.18 8.18 0 0 1-4.18-1.14l-.3-.18-3.1.81.83-3.03-.2-.31A8.17 8.17 0 0 1 1.96 9.95c0-4.54 3.69-8.23 8.23-8.23a8.18 8.18 0 0 1 5.82 2.41 8.18 8.18 0 0 1 2.41 5.82c-.13 4.54-3.82 8.25-8.36 8.25zm4.51-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.12-.12.25-.29.37-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.25 3.75.59.25 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
